@@ -53,6 +53,8 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+activate :directory_indexes
+
 # Build-specific configuration
 configure :build do
   ignore 'images/*.psd'

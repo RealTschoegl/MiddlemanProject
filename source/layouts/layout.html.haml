@@ -33,7 +33,9 @@
     
     -# Stylesheets
     = stylesheet_link_tag 'application'
-  %body{class: current_page.data.body_class || 'page'}
+
+  %body{class: '#{page_classes} #{current_page.data.body_class}'}
+
     = yield
     -# Javascripts
     = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js'

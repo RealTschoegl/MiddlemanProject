@@ -3,7 +3,12 @@ title: Middleman is Watching
 body_class: index
 ---
 
-.welcome
-  %h1 Middleman is Watching
-  %p.doc
-    = link_to 'Read Online Documentation', 'http://middlemanapp.com/', title: 'Read Online Documentation', target: '_blank'
+%h1
+  =data.info.me
+%h2
+  Degrading As Gracefully As My Code
+
+%p
+  = link_to 'About Me', '/about.html'
+%p
+  = link_to 'My Work', '/work.html'
